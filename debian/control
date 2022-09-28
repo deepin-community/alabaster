@@ -1,0 +1,26 @@
+Source: alabaster
+Section: python
+Priority: optional
+Maintainer: Jeremy T. Bouse <jbouse@debian.org>
+Build-Depends: debhelper (>= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.5.1
+Homepage: https://github.com/bitprophet/alabaster
+Vcs-Git: https://github.com/jbouse-debian/alabaster.git
+Vcs-Browser: https://github.com/jbouse-debian/alabaster
+
+Package: python3-alabaster
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Suggests: python3-sphinx
+Provides: ${python3:Provides}
+Description: Configurable sidebar-enabled Sphinx theme (Python 3)
+ This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially
+ as used in his Requests project), which was itself originally based on
+ @mitsuhiko's theme used for Flask & related projects.
+ .
+ This is the Python 3 version of the package.
